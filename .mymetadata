@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ZH3"
+  id="myeclipse.1453714929617"
+  context-root="/ZH3"
+  j2ee-spec="5.0"
+  archive="ZH3.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

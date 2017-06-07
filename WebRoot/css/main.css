@@ -1,0 +1,767 @@
+* {
+	margin: auto;
+	pading: 0px;
+	
+}button {
+	font-size: 20px;
+	
+	cursor:pointer;    /*鼠标经过时，箭头变成手型 */
+}
+ul{
+	list-style-type:disc;
+	color: #000;
+	line-height: 20px;
+	font-family:"Microsoft YaHei";
+}
+
+button:hover{
+	background: #D2691E;
+	color:yellow;
+}
+#main{
+	width: 95%; 
+	height: 100%;
+	background:url("../img/bk.jpg");
+	background-size:cover;      /*等比扩展图片来填满元素，即cover值*/
+	font-family:  "Microsoft YaHei";
+	
+	
+	
+}
+#title_sub{
+	width:100%;
+	height:10%;
+	background: white;
+	filter:alpha(opacity=70);  /*支持 IE 浏览器*/
+	-moz-opacity:0.70; /*支持 FireFox 浏览器*/
+	opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+}
+#title{
+	width:100%;
+	height:10%;	
+	position: absolute;	
+	font-size: 40px;
+	line-height: 160%;
+	text-align: center;
+	letter-spacing: 40px;
+	font-family: Arial, 宋体;
+	color:red;	
+	z-index: 10;	
+}
+.sub{
+	width: 150px;
+	height:150px;
+	border-radius:150px;	/*圆形DIV*/
+	position: absolute;
+	filter:alpha(opacity=70);  /*支持 IE 浏览器*/
+	-moz-opacity:0.70; /*支持 FireFox 浏览器*/
+	opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
+	
+}
+.menu{
+	width: 150px;
+	height:150px;
+	border-radius:150px;	/*圆形DIV*/
+	position: absolute;
+	line-height: 150px;
+	text-align: center;
+	font-size: 30px;
+	color:white;
+	
+}
+#control_sub{
+	
+	top:30%;
+	left: 20%;
+	background: #D2691E;
+	
+	}
+#control{
+	top:30%;
+	left: 20%;
+	position:absolute;
+	z-index: 100;
+	
+}
+#environment_sub{
+	top:40%;
+	left: 35%;
+	background: green;
+}
+#environment{
+	top:40%;
+	left: 35%;
+	
+}
+#energy_sub{
+	top:30%;
+	left: 50%;
+	background: #BDB76B;
+}
+#energy{
+	top:30%;
+	left: 50%;
+	
+}
+#security_sub{
+	top:40%;
+	left: 65%;
+	background: blue;
+	
+}
+#security{
+	top:40%;
+	left: 65%;
+		
+}
+
+.sub:hover,.menu:hover{
+	background: #D8BFD8;
+	color:yellow;
+	cursor:pointer;    /*鼠标经过时，箭头变成手型 */
+}
+
+.area{
+	width: 80%;
+	height: 90%;
+	position: absolute;
+	top:10%;
+	left:11%;
+	
+	
+	
+}
+#control_area{
+	filter:alpha(opacity=0);  /*支持 IE 浏览器*/
+	-moz-opacity:0.0; /*支持 FireFox 浏览器*/
+	opacity:0.0;  /*支持 Chrome, Opera, Safari 等浏览器*/
+	background:grey;
+}
+#environment_area{
+	
+	background:rgba(96,96,96,0)
+}
+#energy_area{
+	background:rgba(96,96,96,0);
+	
+}
+#security_area{
+	background:rgba(96,96,96,0)
+}
+.content{
+	width: 80%;
+	height: 90%;
+	position: absolute;
+	top:10%;
+	left:11%;
+	/*border-color: red;
+	border-style: solid;
+*/}
+
+.cc{
+	filter:alpha(opacity=70);  /*支持 IE 浏览器*/
+	-moz-opacity:0.70; /*支持 FireFox 浏览器*/
+	opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
+	background:black;
+}
+.word{
+	width:25%;
+	height:90%;
+	color:white;
+	font-size:30px;
+	line-height:50px;
+	background: #D2691E;
+	text-align: center;
+	position:absolute;
+	left:-5px;
+	top:-5px;
+}
+.word2{
+	width:20%;
+	height:90%;
+	color:white;
+	font-size:30px;
+	line-height:50px;
+	background: #D2691E;
+	text-align: center;
+	position:absolute;
+	left:-5px;
+	top:-5px;
+}
+#video{
+	width:50%;
+	height:60%;
+	position:absolute;
+	top:5%;
+	left:5%;
+	
+}
+#img1{
+	width:50%;
+	height:60%;
+	position:absolute;
+	top:5%;
+	left:5%;
+	z-index: 1000;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #D2691E;
+	
+}
+#video_control{
+	width:30%;
+	height:28%;
+	position:absolute;
+	top:70%;
+	left:5%;	
+}
+.video_control{
+	width:23%;
+	height:28%;
+}
+#video_up{
+	position: absolute;
+	top:10%;
+	left:50%;
+}
+#video_down{
+	position: absolute;
+	top:60%;
+	left:50%;
+}
+#video_left{
+	position: absolute;
+	top:33%;
+	left:25%;
+}
+#video_right{
+	position: absolute;
+	top:33%;
+	left:75%;
+}
+
+
+#aircondition{
+	width:40%;
+	height:30%;
+	position:absolute;
+	top:5%;
+	left:57%;	
+}
+#air_data{
+	width:40%;
+	height:30%;
+	position:absolute;
+	top:5%;
+	left:20%;	
+	background: white;
+	font-size: 36px;
+	line-height: 180%;
+	text-align: center;
+}
+#air_open{
+	width:18%;
+	height:30%;
+	position:absolute;
+	top:5%;
+	left:62%;
+}
+#air_close{
+	width:18%;
+	height:30%;
+	position:absolute;
+	top:5%;
+	left:80%;
+}
+#air_colde{
+	width:19%;
+	height:28%;
+	position:absolute;
+	top:40%;
+	left:20%;
+}
+#air_hot{
+	width:19%;
+	height:28%;
+	position:absolute;
+	top:40%;
+	left:41%;
+}
+#air_speed{
+	width:19%;
+	height:28%;
+	position:absolute;
+	top:70%;
+	left:20%;
+}
+#air_sleep{
+	width:19%;
+	height:28%;
+	position:absolute;
+	top:70%;
+	left:41%;
+}
+#air_up{
+	width:18%;
+	height:58%;
+	position:absolute;
+	top:40%;
+	left:62%;
+	font-size: 50px;
+}
+#air_down{
+	width:18%;
+	height:58%;
+	position:absolute;
+	top:40%;
+	left:80%;
+	font-size: 50px;
+}
+#curtain{
+	width:40%;
+	height:25%;
+	position:absolute;
+	top:40%;
+	left:57%;	
+}
+#curtain_open{
+	width:20%;
+	height:40%;
+	position:absolute;
+	top:25%;
+	left:25%;
+}
+#curtain_stop{
+	width:20%;
+	height:40%;
+	position:absolute;
+	top:25%;
+	left:50%;
+}
+#curtain_close{
+	width:20%;
+	height:40%;
+	position:absolute;
+	top:25%;
+	left:75%;
+}
+#light{
+	width:25%;
+	height:28%;
+	position:absolute;
+	top:70%;
+	left:40%;
+}
+#light_open{
+	width:80px;
+	height:80px;
+	/*background:url("../img/LO2.png");
+	*/background-size:contain; 
+	background-repeat:no-repeat;
+	position: absolute;
+	top: 25%;
+	left:30%;
+		
+}
+#light_close{
+	width:80px;
+	height:80px;
+	/*background-image:url("../img/LO1.png");
+	*/background-size:contain; 
+	background-repeat:no-repeat;
+	position: absolute;
+	top: 25%;
+	left:65%;
+	
+}
+#fan{
+	width:27%;
+	height:28%;
+	position:absolute;
+	top:70%;
+	left:70%;	
+}
+#fan_open{
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:25%;
+	left:30%;
+}
+#fan_stop{
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:25%;
+	left:65%;
+}
+/**--------------------------环境监控部分页面  ---------------------------------------------------**/
+#temp{
+	width:35%;
+	height:40%;
+	position:absolute;
+	left:5%;
+	top:20px;
+}
+#hum{
+	width:35%;
+	height:40%;
+	position:absolute;
+	left:52%;
+	top:20px;
+}
+#smog{
+	width:35%;
+	height:40%;
+	position:absolute;
+	left:5%;
+	top:50%;
+}
+#smog2{
+	width:35%;
+	height:40%;
+	position:absolute;
+	left:52%;
+	top:50%;
+}
+/**--------------------------能耗管控部分页面  ---------------------------------------------------**/
+#eng{
+	width:55%;
+	height:60%;
+	position:absolute;
+	left:15%;
+	top:15%;
+	background: red;
+}
+.energy_part{
+	width: 190px;
+	height:150px;
+	background: rgba(95,195,215,0.8);
+	
+}
+.en_tittle{
+	height: 50px;
+	width: 100%;
+	font-size: 24px;
+	position: absolute;
+	left: 60px;
+	top:10px;
+	}
+.en_data_part{
+	margin-left: -10px;	
+	position: absolute;
+	top:50px;
+}
+.en_data{
+	display:inline-table;
+	width:76px;
+	border-bottom-style:ridge;
+	border-bottom-width: 2px;
+	text-align: center;
+	color:#ffff0F;
+
+}
+#en_tv{
+	position: absolute;
+	top:50px;
+	left:150px;
+}
+#en_fan{
+	position: absolute;
+	top:50px;
+	left:340px;	
+}
+#en_air{
+	position: absolute;
+	top:50px;
+	left:730px;	
+}
+#en_hotwater{
+	position: absolute;
+	top:250px;
+	left:150px;
+}
+#en_dianfanbao{
+	position: absolute;
+	top:250px;
+	left:450px;
+}
+#en_light{
+	position: absolute;
+	top:250px;
+	left:730px;
+}
+#en_water{
+	position: absolute;
+	top:450px;
+	left:150px;
+}
+#en_dianbiao{
+	position: absolute;
+	top:450px;
+	left:450px;
+}
+#en_qibiao{
+	position: absolute;
+	top:450px;
+	left:730px;
+}
+/**--------------------------综合安防部分页面  ---------------------------------------------------**/
+#dun_img{
+	position: absolute;
+	left:38%;
+	top:28%;
+}
+#infrared{
+	position: absolute;
+	width:150px;
+	height:150px;
+	left:18%;
+	top:10%;
+}
+#door{
+	position: absolute;
+	width:150px;
+	height:150px;
+	left:65%;
+	top:10%;
+}
+#fire{
+	position: absolute;
+	width:150px;
+	height:150px;
+	left:18%;
+	top:58%;
+}
+#co{
+	position: absolute;
+	width:150px;
+	height:150px;
+	left:65%;
+	top:58%;
+}
+#inf_word{
+	position: absolute;
+	width:150px;
+	height:40px;
+	font-size:28px;
+	line-height:40px;
+	text-align:center;
+	left:18%;
+	top:30%;
+	background:rgba(96,96,96,0.4)
+}
+#door_word{
+	position: absolute;
+	width:150px;
+	height:40px;
+	font-size:28px;
+	line-height:40px;
+	text-align:center;
+	left:65%;
+	top:30%;
+	background:rgba(96,96,96,0.4)
+}
+#fire_word{
+	position: absolute;
+	width:150px;
+	height:40px;
+	font-size:28px;
+	line-height:40px;
+	text-align:center;
+	left:18%;
+	top:79%;
+	background:rgba(96,96,96,0.4)
+}
+#co_word{
+	position: absolute;
+	width:150px;
+	height:40px;
+	font-size:28px;
+	line-height:40px;
+	text-align:center;
+	left:65%;
+	top:79%;
+	background:rgba(96,96,96,0.4)
+}
+/**--------------------------能耗管控2部分页面  ---------------------------------------------------**/
+#en_table{
+	position:absolute;
+	left:90px;
+	top:50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#en_table tr{	
+	height: 50px;
+	background:rgba(166,166,166,0.8);
+	
+}
+#en_table tr:hover{
+	background:rgba(225,223,222,0.5);
+	
+}
+#en_table td{
+	width: 120px;	
+	text-align: center;
+	font-size:22px;
+	font-family:  "Microsoft YaHei";
+	border-style: solid;
+	border-width:3px;
+	border-color: white;	
+}
+.en_button{
+	width:30px;
+	height: 30px;
+	border-radius:30px;
+	border-style:solid;
+	background: green;	
+}
+.en_button:hover{
+	background: green;
+}
+.sanbiao{
+	width: 180px;
+	height: 120px;
+	background:rgba(166,166,166,0.8);
+	border-style: solid;
+	border-width:3px;
+	border-color: white;
+	border-collapse:collapse;
+	
+}
+.sanbiao_title{
+	height:50px;
+	width:150px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: white;
+}
+#shuibiao{
+	position:absolute;
+	top:400px;
+	left:90px;
+}
+#shuibiao_title{
+	position: absolute;
+	top:10px;
+	left:70px;
+	font-size: 24px;
+	
+}
+#shuibiao_data{
+	width:100%;
+	text-align:center;
+	position:relative;
+	top:20px;
+	font-size: 22px;
+}
+#dianbiao{
+	position:absolute;
+	top:400px;
+	left:275px;
+	
+}
+#dianbiao2{
+	position:absolute;
+	top:400px;
+	left:460px;
+	
+}
+#dianbiao_title{
+	position: absolute;
+	top:10px;
+	left:60px;
+	font-size: 24px;
+}
+#dianbiao_data{
+	width:100%;
+	text-align:center;
+	position:relative;
+	top:30px;
+	font-size: 22px;
+}
+#dianbiao2_data{
+	width:100%;
+	text-align:center;
+	position:relative;
+	top:30px;
+	font-size: 22px;
+}
+#qibiao{
+	position:absolute;
+	top:400px;
+	left:645px;
+	
+}
+#qibiao_title{
+	position: absolute;
+	top:5px;
+	left:90px;
+	font-size: 24px;
+}
+#qibiao_data{
+	width:100%;
+	text-align:center;
+	position:relative;
+	top:15px;
+	font-size: 22px;
+}
+#tubiao{
+	width:122px;
+	height:110px;
+	position:absolute;
+	
+	top:400px;
+	left:830px;
+	text-align: center;
+	font-size: 22px;
+	padding-top: 10px;	
+}
+#tubiao:hover{
+	cursor:pointer;    /*鼠标经过时，箭头变成手型 */
+	background:rgba(225,223,222,0.9);
+}
+#en_area2{
+	width:100%;
+	height:100%;
+	background:rgba(96,96,96,0);	
+}
+#en_dianliang{
+	position:absolute;
+	top:50px;
+	left:20px;
+	width: 550px;
+	height: 400px;
+}
+#en_gonglv{
+	position:absolute;
+	top:50px;
+	left:600px;
+	width: 550px;
+	height: 400px;
+}
+#back{
+	width:80px;
+	height:80px;	
+	text-align: center;
+	font-size: 16px;
+	line-height:30px;
+	/*color:#4897F1;*/
+	color:black;
+	position: absolute;
+	top:365px;
+	left:1180px;
+	background:white;
+	border-style: solid;
+	border-width:3px;
+	border-color: white;
+	border-radius:5px;	/*圆形DIV*/
+}
+#back:hover{
+	cursor:pointer;    /*鼠标经过时，箭头变成手型 */
+	background:rgba(225,223,222,0.9);
+}
